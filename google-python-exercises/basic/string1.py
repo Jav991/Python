@@ -69,10 +69,9 @@ def fix_start(s):
 #   'dog', 'dinner' -> 'dig donner'
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
-  # +++your code here+++
-  return
-
-
+  mix = a [:2] + b [2:]
+  mix2 = b[:2] + a[2:]
+  return mix '' + mix2
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
 def test(got, expected):
